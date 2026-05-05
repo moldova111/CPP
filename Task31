@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int num;
+    setlocale(0, "Russian");
+    string names[] = {"Ноль", "Один", "Два", "Три", "Четыре", "Пять", "Шесть", "Семь", "Восемь", "Девять"};
+    cout << "Введите число ";
+    cin >> num;
+    if (num >= 0 && num <= 9){
+        cout << names[num];
+    }
+    return 0;
+}
